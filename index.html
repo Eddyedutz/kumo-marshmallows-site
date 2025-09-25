@@ -13,10 +13,9 @@
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
         }
-        .hero-bg {
-            background-image: url('https://placehold.co/1600x900/f0e4e4/a88b8b?text=Fluffy+Marshmallows');
-            background-size: cover;
-            background-position: center;
+        .video-overlay > * {
+            position: relative;
+            z-index: 10;
         }
     </style>
 </head>
@@ -56,13 +55,18 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero-bg text-white">
-            <div class="bg-black/40">
-                <div class="container mx-auto px-6 py-32 text-center">
-                    <h2 class="text-5xl md:text-7xl font-bold mb-4">Experience Cloud-Like Softness</h2>
-                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Handcrafted, gourmet marshmallows made with love. Welcome to Kumo, where every bite is a little piece of heaven.</p>
-                    <a href="#products" class="bg-white text-pink-400 font-bold px-8 py-3 rounded-full text-lg hover:bg-pink-100 transition">Discover Our Flavors</a>
-                </div>
+        <section id="home" class="relative text-white overflow-hidden">
+            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <source src="02_seconds_scene_202509200029_nlc0f.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"></div>
+
+            <div class="container mx-auto px-6 py-32 text-center video-overlay">
+                <h2 class="text-5xl md:text-7xl font-bold mb-4">Experience Cloud-Like Softness</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Handcrafted, gourmet marshmallows made with love. Welcome to Kumo, where every bite is a little piece of heaven.</p>
+                <a href="#products" class="bg-white text-pink-400 font-bold px-8 py-3 rounded-full text-lg hover:bg-pink-100 transition">Discover Our Flavors</a>
             </div>
         </section>
 
@@ -155,8 +159,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-stone-800 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
+    <footer class="bg-stone-800 text-white">
+        <img src="cover.jpg" alt="Kumo gourmet marshmallows cover" class="w-full object-cover h-auto">
+        <div class="container mx-auto px-6 text-center py-12">
             <h2 class="text-3xl font-bold text-pink-300 mb-4">Kumo</h2>
             <nav class="mb-6">
                  <a href="#home" class="p-2 text-stone-300 hover:text-pink-300 transition">Home</a>
