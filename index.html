@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumo - Gourmet Marshmallows</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1600x900/f0e4e4/a88b8b?text=Fluffy+Marshmallows');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-pink-400">Kumo</h1>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-stone-600 hover:text-pink-400 transition">Home</a>
+                <a href="#products" class="text-stone-600 hover:text-pink-400 transition">Products</a>
+                <a href="#our-story" class="text-stone-600 hover:text-pink-400 transition">Our Story</a>
+                <a href="#contact" class="text-stone-600 hover:text-pink-400 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-stone-500 hover:text-pink-400 transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-stone-500 hover:text-pink-400 transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.623c-2.403 0-2.73.01-3.682.055-1.002.045-1.52.2-1.884.364a3.287 3.287 0 00-1.18 1.18c-.164.364-.319.882-.364 1.884-.045.952-.055 1.279-.055 3.682s.01 2.73.055 3.682c.045 1.002.2 1.52.364 1.884a3.287 3.287 0 001.18 1.18c.364.164.882.319 1.884.364.952.045 1.279.055 3.682.055s2.73-.01 3.682-.055c1.002-.045 1.52-.2 1.884-.364a3.287 3.287 0 001.18-1.18c.164-.364.319-.882-.364-1.884.045-.952.055-1.279.055-3.682s-.01-2.73-.055-3.682c-.045-1.002-.2-1.52-.364-1.884a3.287 3.287 0 00-1.18-1.18c-.364-.164-.882-.319-1.884-.364C15.045 3.633 14.715 3.623 12.315 3.623zM12 8.118a3.882 3.882 0 110 7.764 3.882 3.882 0 010-7.764zm0 6.136a2.254 2.254 0 100-4.508 2.254 2.254 0 000 4.508zM16.855 6.4a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" clip-rule="evenodd" /></svg>
+                </a>
+                 <a href="#" class="bg-pink-300 text-white px-4 py-2 rounded-full cursor-not-allowed">Coming Soon!</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-stone-600 hover:text-pink-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#home" class="block py-2 text-stone-600 hover:text-pink-400">Home</a>
+            <a href="#products" class="block py-2 text-stone-600 hover:text-pink-400">Products</a>
+            <a href="#our-story" class="block py-2 text-stone-600 hover:text-pink-400">Our Story</a>
+            <a href="#contact" class="block py-2 text-stone-600 hover:text-pink-400">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white">
+            <div class="bg-black/40">
+                <div class="container mx-auto px-6 py-32 text-center">
+                    <h2 class="text-5xl md:text-7xl font-bold mb-4">Experience Cloud-Like Softness</h2>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Handcrafted, gourmet marshmallows made with love. Welcome to Kumo, where every bite is a little piece of heaven.</p>
+                    <a href="#products" class="bg-white text-pink-400 font-bold px-8 py-3 rounded-full text-lg hover:bg-pink-100 transition">Discover Our Flavors</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-stone-800 mb-12">Our Gourmet Marshmallows</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product 1: Classic Vanilla -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/f8d7da/a1887f?text=Classic+Vanilla" alt="Classic Vanilla Marshmallow" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Classic Vanilla</h3>
+                            <p class="text-stone-600 mb-4">A timeless classic. Light, fluffy, and infused with the pure essence of Madagascar vanilla bean.</p>
+                        </div>
+                    </div>
+                    <!-- Product 2: Chocolate Swirl -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/d1c4e9/7e57c2?text=Chocolate+Swirl" alt="Chocolate Swirl Marshmallow" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Chocolate Swirl</h3>
+                            <p class="text-stone-600 mb-4">Rich, decadent dark chocolate swirled into our signature vanilla marshmallow. A chocolate lover's dream.</p>
+                        </div>
+                    </div>
+                    <!-- Product 3: Strawberry Dream -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/ffcdd2/e57373?text=Strawberry+Dream" alt="Strawberry Dream Marshmallow" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Strawberry Dream</h3>
+                            <p class="text-stone-600 mb-4">Made with real strawberries for a burst of fresh, fruity flavor. Perfectly sweet and delightfully pink.</p>
+                        </div>
+                    </div>
+                    <!-- Product 4: Matcha Green Tea -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/c8e6c9/81c784?text=Matcha+Green+Tea" alt="Matcha Green Tea Marshmallow" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Matcha Green Tea</h3>
+                            <p class="text-stone-600 mb-4">Earthy and subtly sweet, our matcha marshmallows feature premium, ceremonial-grade Japanese green tea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section id="coming-soon" class="py-20 bg-stone-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-stone-800 mb-4">Our Online Store is Launching Soon!</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto mb-8">We're putting the finishing touches on our new online shop. Sign up below to be the first to know when we go live!</p>
+                <form class="max-w-md mx-auto flex">
+                    <input type="email" placeholder="Enter your email" class="w-full p-3 border border-stone-200 rounded-l-full focus:outline-none focus:ring-2 focus:ring-pink-300">
+                    <button type="submit" class="bg-pink-400 text-white font-bold px-6 py-3 rounded-r-full hover:bg-pink-500 transition">Notify Me</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="our-story" class="bg-pink-50 py-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/e6dace/a88b8b?text=Our+Story" alt="Making Marshmallows" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-stone-800 mb-6">From a Simple Dream to a Sweet Reality</h2>
+                    <p class="text-stone-600 mb-4 leading-relaxed">Kumo, meaning 'cloud' in Japanese, was born from a passion for creating the perfect marshmallow. We believe in quality ingredients, small-batch production, and the simple joy that a perfect, fluffy treat can bring. Each marshmallow is handcrafted with care, ensuring a pillowy texture and unforgettable flavor in every bite.</p>
+                    <p class="text-stone-600 leading-relaxed">Our journey started in a small home kitchen, and has grown into a mission to share our love for these gourmet sweets with the world. We hope you enjoy them as much as we love making them.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold text-stone-800 mb-4">Get In Touch</h2>
+                    <p class="text-stone-600 mb-8">Have a question, a special request, or just want to say hi? We'd love to hear from you!</p>
+                </div>
+                <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300">
+                    </div>
+                    <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-stone-200 rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+                    <div class="text-center">
+                        <button type="submit" class="bg-pink-400 text-white font-bold px-8 py-3 rounded-full hover:bg-pink-500 transition">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-pink-300 mb-4">Kumo</h2>
+            <nav class="mb-6">
+                 <a href="#home" class="p-2 text-stone-300 hover:text-pink-300 transition">Home</a>
+                <a href="#products" class="p-2 text-stone-300 hover:text-pink-300 transition">Products</a>
+                <a href="#our-story" class="p-2 text-stone-300 hover:text-pink-300 transition">Our Story</a>
+                <a href="#contact" class="p-2 text-stone-300 hover:text-pink-300 transition">Contact</a>
+            </nav>
+            <p class="text-stone-400">&copy; 2025 Kumo - Gourmet Marshmallows. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+
